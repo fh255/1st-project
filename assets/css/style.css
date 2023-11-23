@@ -4,17 +4,19 @@ body{
         padding: 0;
         box-sizing: border-box;
         color: black;
+        width: 100%;
+        
 }
 header,
 section,
 footer {
-    margin: 10px;
-    width: 95%;
+    margin: 20px;
+    width: 100%;
 }
 
 header{
     height: 50px;
-    width: 95%;
+    
 }
 
 #logo {
