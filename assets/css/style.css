@@ -1,41 +1,40 @@
-body{
+body {
     font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        color: black;
-        width: 100%;
-        
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Include padding and borders in the element's total width and height */
+    color: black;
+    max-width: 100%;
+        overflow-x: hidden;
 }
+
 header,
 section,
 footer {
-    margin: 20px;
-    width: 100%;
+    margin: 20px 0;
 }
 
-header{
+header {
     height: 50px;
-    
 }
 
 #logo {
     float: left;
-    font-size: 260%;
+    font-size: 2.6em;
     margin: 10px;
-    width: 50%;
     padding-top: 5px;
     color: black;
-        font-family: Oswald, sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/*Navigation link*/
 #menu {
     font-size: 110%;
     letter-spacing: 1px;
 }
+
 #menu li {
     float: right;
     list-style-type: none;
@@ -55,20 +54,19 @@ header{
 #image-outer {
     height: 600px;
     overflow: hidden;
-    /*position: relative;*/
     background-color: white;
-}
-#main-image {
-    height: 550px;
     width: 100%;
-    background: url("../image/main-image.webp") no-repeat center center;
+}
 
-    /*Animate the zoom of main image*/
+#main-image {
+    width: 95%;
+    height: 550px;
+    background: url("../image/main-image.webp") no-repeat center center;
     animation-name: main-image-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
-/* create the level of zoom in the main image*/
+
 @keyframes main-image-zoom {
     from {
         transform: scale(1);
@@ -78,10 +76,12 @@ header{
         transform: scale(1.1);
     }
 }
+
 #cover-text,
 #cover-text h2 {
     color: #fff;
 }
+
 #cover-text {
     font-size: 130%;
     font-family: Oswald, sans-serif;
@@ -96,16 +96,12 @@ header{
     text-align: left;
     position: absolute;
 }
-/*About*/
+
 #about {
     font-family: Oswald, sans-serif;
-    margin-left: 30px;
-    margin-right: 30px;
-    
+    margin: 0 30px;
     text-align: justify;
     color: #3a3a3a;
     padding-bottom: 20px;
     height: 200px;
 }
-
-
