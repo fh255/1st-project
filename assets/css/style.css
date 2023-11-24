@@ -91,17 +91,43 @@ header {
     height: 200px;
     padding-top: 40px;
     padding-left: 100px;
-    bottom: 60px;
-    right: 20px;
+bottom: 30px;
+    right: 150px;
     text-align: left;
     position: absolute;
 }
 
 #about {
     font-family: Oswald, sans-serif;
-    margin: 0 30px;
+    margin: 0 20px;
     text-align: justify;
     color: #3a3a3a;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     height: 200px;
+}
+#about>h2 {
+    font-size: 30px;
+    font-family: Oswald, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 20px;
+}
+footer {
+    height: 40px;
+    margin: 20px;
+}
+
+#social-networks {
+    text-align: center;
+}
+
+#social-networks>li {
+    display: inline;
+    color: inherit;
+}
+
+#social-networks i {
+    font-size: 150%;
+    margin: 5%;
+    padding: 2%;
 }
